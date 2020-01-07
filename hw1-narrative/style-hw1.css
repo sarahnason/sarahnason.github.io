@@ -1,10 +1,44 @@
 h1 {
-	font-family: 'Helvetica Neue';
+	font-family: 'Work Sans';
 	font-size: 48px;
+	color: #fff;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Work Sans';
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	margin-top: 25px;
 }
 
 body {
-	font-family: 'Helvetica Neue';
-	font-size: 12px;
-	padding: 20px;
+	font-family: 'Work Sans';
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	padding-top: 35px;
+	background-image: url('http://sarahnason.github.io/images/5623285708_818a259bde_3k.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+img {
+	padding: 25px;
+}
+
+a:link {
+  color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+	text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+	text-decoration: none;
 }
