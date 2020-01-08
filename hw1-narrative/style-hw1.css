@@ -1,17 +1,17 @@
 @font-face {
-  font-family: workSans-Regular;
-  src: url(http://sarahnason.github.io/hw1-narrative/WorkSans-Regular.ttf);
+  font-family: workSansRegular;
+  src: url(http://sarahnason.github.io/hw1-narrative/worksans-regular.ttf);
 }
 
 h1 {
-	font-family: 'workSans-Regular';
+	font-family: workSansRegular;
 	font-size: 48px;
 	color: #fff;
 	text-align: center;
 }
 
 h2 {
-	font-family: 'workSans-Regular';
+	font-family: workSansRegular;
 	font-size: 48px;
 	color: #fff;
 	text-align: center;
@@ -19,7 +19,7 @@ h2 {
 }
 
 body {
-	font-family: 'workSans-Regular';
+	font-family: workSansRegular;
 	font-size: 15px;
 	color: #fff;
 	text-align: center;
