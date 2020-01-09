@@ -3,16 +3,30 @@
 }
 
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
-	color: #333;
+	background: #FFCECB;
+	color: #BlanchedAlmond;
+	font-family: 'Authentic Sans';
+	font-size: 11px;
 }
 
-a {
+a:link {
 	text-decoration: none;
-	color: #333;
+	color: #BlanchedAlmond;
 }
 
-a:hover { color: Tomato; }
+a:active {
+	text-decoration: none;
+	color: #BlanchedAlmond;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #BlanchedAlmond;
+}
+
+a:hover {
+	color: #BlanchedAlmond;
+}
 
 header, nav, main, footer {
 	width: 80%;
@@ -21,37 +35,41 @@ header, nav, main, footer {
 
 
 /* Header styles */
-header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+header {
+	background-color: #FFCECB;
+	color: #3E65FF;
 	min-height: 100px;
 	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
 }
 
 header h1 {
 	padding: 40px 60px;
 	font-size: 48px;
+	font-family: 'Serifbabe';
 }
 
 
 /* Nav styles */
-nav { background-color: #333; }
-nav ul { 
+nav { background-color: #FFCECB; }
+nav ul {
 	display: flex;
 	justify-content: flex-end;
 }
 nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
+nav a { color: #FF3E3E; }
 nav a:hover { color: white; }
 
 
 /* Main styles */
-main { 
-	background-color: #fff;
+main {
+	background-color: #FFCECB;
 	display: grid;
 	grid-template-columns: 60% 40%;
+	color: #FF3E3E;
 }
+
+main a { color: #FF3E3E; }
+main a:hover { color: white; }
 
 section {
 	padding: 40px 60px;
@@ -59,7 +77,7 @@ section {
 
 section ul, aside ul {
 	list-style-type: square;
-	margin-top: 20px; 
+	margin-top: 20px;
 	margin-left: 30px;
 	margin-bottom: 40px;
 }
@@ -69,9 +87,9 @@ aside {
 }
 
 /* Footer styles */
-footer { 
-	background-color: #000;
-	color: white;
+footer {
+	background-color: #FFCECB;
+	color: #3E65FF;
 	text-align: center;
  }
  footer p { padding: 20px; }
