@@ -1,15 +1,39 @@
 /*
+font-family: 'Taviraj', serif;
 font-family: 'Public Sans', sans-serif;
 */
 
 body {
   font-family: 'Public Sans', sans-serif;
+  font-weight: 200;
 }
 
 p {
   font-family: 'Public Sans', sans-serif;
+  margin: 0px;
 }
 
 h1 {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Taviraj', sans-serif;
+}
+
+.grid-demo {
+
+}
+
+.grid-demo section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-demo div {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.grid-demo .feature {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  font-weight: 400;
 }
