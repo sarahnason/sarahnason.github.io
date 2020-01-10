@@ -1,0 +1,66 @@
+/*
+font-family: 'Smokum', cursive;
+font-family: 'Space Mono', monospace;
+*/
+
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: saddlebrown;
+  background-color: linen;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Smokum', cursive;
+  font-size: 64px;
+  text-align: center;
+  color: goldenrod;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: saddlebrown;
+  background-color: linen;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-demo {
+
+}
+
+.grid-demo section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-demo div {
+  border: 1px dotted goldenrod;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.grid-demo img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.grid-demo .feature {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-weight: 400;
+}
