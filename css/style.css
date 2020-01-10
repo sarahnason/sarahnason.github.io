@@ -1,9 +1,4 @@
 @font-face {
-  font-family: serifbabe;
-  src: url(../Serifbabe-Regular.ttf);
-}
-
-@font-face {
   font-family: authenticsans;
   src: url(../AUTHENTIC-Sans.woff);
 }
@@ -55,7 +50,7 @@ header {
 header h1 {
 	padding: 40px 60px;
 	font-size: 48px;
-	font-family: 'serifbabe';
+	font-family: 'Nova Cut', cursive;
 }
 
 
