@@ -1,0 +1,65 @@
+body {
+	background-color: #ccc;
+}
+
+main {
+	width: 80%;
+	margin: 80px auto;
+}
+
+.svg-square {
+	width: 150px;
+	margin: 80px;
+	animation-name: spinSquare;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes spinSquare {
+  	0% {
+  		transform: rotate(0deg);
+  		}
+
+  	100% {
+  		transform: rotate(360deg);
+  		}
+}
+
+.svg-words {
+	width: 500px;
+}
+
+.svg-words path:nth-child(even){
+	fill: #f00;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	background-color: rgba(255, 0, 0, 1);
+	padding: 12px 20px;
+	border-radius: 12px;
+	color: #fff;
+	border: 2px solid #f00;
+}
+
+.button:hover {
+	animation-name: button-hover;
+  	animation-duration: 2s;
+  	position: relative;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes button-hover {
+  	0% {
+  		background-color: rgba(255, 0, 0, 1)
+  		}
+
+  	100% {
+  		background-color: rgba(255, 0, 0, 0)
+  		}
+}
