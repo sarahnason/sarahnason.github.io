@@ -1,0 +1,52 @@
+body {
+	background-color: #fff;
+}
+
+.square-guy {
+	width: 10%;
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	position: relative;
+  	animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+  0%   {top: 250px;}
+  25%  {top: 100px;}
+  75%  {top: 8px;}
+  100% {top: 250px;}
+}
+
+.circle-guy {
+	width: 20%;
+	display: block;
+	padding-top: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	animation-name: spinCircle;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes spinCircle {
+  	0% {
+  		transform: rotate(0deg);
+  		}
+
+  	100% {
+  		transform: rotate(360deg);
+  		}
+}
+
+.text {
+	font-family: monospace;
+	font-size: 28px;
+	color:#f28fb1;
+	text-align: center;
+	padding-top: 40px;
+}
