@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>s h o e g a z i n g</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.typekit.net/hqo0upr.css">
+	<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'MBV')" id="defaultOpen">My Bloody Valentine</button>
+  <button class="tablinks" onclick="openCity(event, 'Slowdive')">Slowdive</button>
+  <button class="tablinks" onclick="openCity(event, 'Ride')">Ride</button>
+  <button class="tablinks" onclick="openCity(event, 'Lush')">Lush</button>
+</div>
+
+<div id="MBV" class="tabcontent">
+  <p>London is the capital city of England.</p>
+  <video autoplay muted loop id="myVideo">
+  		<source src="mbv.mp4" type="video/mp4">
+  		Your browser does not support HTML5 video.
+	</video> 
+</div>
+
+<div id="Slowdive" class="tabcontent">
+	<p>Slowdive is a band from here and there.</p>
+	<video autoplay muted loop id="myVideo">
+  		<source src="slowdive.mp4" type="video/mp4">
+  		Your browser does not support HTML5 video.
+	</video> 
+</div>
+
+<div id="Ride" class="tabcontent">
+  <p>Tokyo is the capital of Japan.</p>
+  <video autoplay muted loop id="myVideo">
+  		<source src="ride.mp4" type="video/mp4">
+  		Your browser does not support HTML5 video.
+	</video> 
+</div>
+
+<div id="Lush" class="tabcontent">
+  <p>Tokyo is the capital of Japan.</p>
+  <video autoplay muted loop id="myVideo">
+  		<source src="lush.mp4" type="video/mp4">
+  		Your browser does not support HTML5 video.
+	</video> 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	
+</body>
+</html>
