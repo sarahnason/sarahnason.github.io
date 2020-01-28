@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery!</title>
+	<style>
+		.text { font-size: 18px; }
+		.hide { display: none; }
+		.jiggle {
+			background-color: pink;
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			padding: 10px;
+		}
+		.jiggler {
+			animation-name: jello;
+			animation-duration: 1s;
+		}
+
+		@keyframes jello {
+			0% {transform: rotate(20deg);}
+			25% {transform: rotate(-20deg);}
+			50% {transform: rotate(20deg);}
+			100% {transform: rotate(-20deg);}
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery demo</h1>
+	<div class="jiggle">jiggle me</div>
+	<a href="#" class="buttonShow">show text</a>
+	<p class="text hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		Neque odit quia pariatur nulla at porro nesciunt magnam, 
+		sapiente error dolor distinctio voluptatem, amet, non doloribus. 
+		Aut dolorum fugit qui! Doloremque, placeat deleniti architecto 
+		sequi explicabo aliquid expedita nemo necessitatibus vel!</p>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+  	$('.buttonShow').click(function(){
+  		$('.text').toggleClass('hide');
+  	})
+
+  	$('.jiggle').click(function(){
+  		$('.jiggle').addClass('jiggler')
+  	})
+  </script>
+</body>
+</html>
