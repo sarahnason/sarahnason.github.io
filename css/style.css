@@ -39,17 +39,17 @@ a:hover {
 }
 
 header, nav, main, footer {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 
 
 /* Header styles */
 header {
-	background-color: #FFCECB;
-	color: #3E65FF;
+	background-color: #3E65FF;
+	color: #FFCECB;
 	min-height: 100px;
-	margin-top: 60px;
+	margin-top: 0px;
 }
 
 header h1 {
