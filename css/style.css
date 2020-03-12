@@ -58,6 +58,10 @@ header h1 {
 	font-family: 'Nova Cut', cursive;
 }
 
+h2 {
+	font-size: 18px;
+}
+
 
 /* Nav styles */
 nav { background-color: #FFCECB; }
