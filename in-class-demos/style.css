@@ -4,36 +4,129 @@ font-family: 'Public Sans', sans-serif;
 */
 
 body {
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 200;
+
 }
 
 p {
-  font-family: 'Public Sans', sans-serif;
-  margin: 0px;
+
 }
 
 h1 {
-  font-family: 'Taviraj', sans-serif;
+
 }
 
-.grid-demo {
-
+body {
+  margin:0;
+  padding:0;
 }
 
 .grid-demo section {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: 35% 65%;
+  grid-gap: 0px;
+  background-color: #fff;
 }
 
 .grid-demo div {
   border: 1px solid black;
-  padding: 20px;
+  padding: 0px;
 }
 
-.grid-demo .feature {
-  grid-column: 2/4;
-  grid-row: 1/3;
-  font-weight: 400;
+.grid-demo .one {
+  height: 60vh;
+}
+
+.grid-demo .content {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.grid-demo .three {
+  height: 40vh;
+  padding-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  color: #f286a7;
+  }
+
+img {
+
+}
+
+p {
+  position: fixed;
+  padding-top: 30px;
+  font-family: moret, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 40px;
+  z-index: 4;
+  }
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #fff;
+  width: 100%;
+  z-index: 3;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #fff;
+  padding: 35px 28px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: moret, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: #f286a7;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  text-decoration:none;
+  -webkit-text-fill-color: #f286a7;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f286a7;
+  text-decoration:none;
+}
+
+video {
+  position: fixed;
+  min-height: 100%;
+  z-index: 2; 
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  background-color: #fff;
+  padding-left: 15px;
+  border: none;
+  width: 100%;
+  border-left: none;
+  height: 100vh;
+  z-index: 1;
 }
