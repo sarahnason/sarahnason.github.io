@@ -11,7 +11,12 @@ body {
 	background: #FFCECB;
 	color: #BlanchedAlmond;
 	font-family: 'authenticsans';
-	font-size: 11px;
+	font-size: 12px;
+}
+
+li {
+	padding: 3px;
+	list-style-type: circle;
 }
 
 a:link {
@@ -60,7 +65,9 @@ nav ul {
 	display: flex;
 	justify-content: flex-end;
 }
-nav li { padding: 10px 10px; }
+nav li { padding: 10px 10px;
+  list-style-type: none;
+}
 nav a { color: #FF3E3E; }
 nav a:hover { color: white; }
 
